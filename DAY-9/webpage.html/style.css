@@ -1,0 +1,217 @@
+/* =========================================
+   전체 공통 (부드러운 스크롤 추가)
+========================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================
+   메인 본문 영역 (style.css)
+========================================= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(226, 54, 54, 1);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #dfdfdf;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 16px 45px;
+  background-color: var(--spidey-red);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: var(--spidey-dark-red);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(226, 54, 54, 0.6);
+}
+
+/* =========================================
+   시놉시스 섹션 (Synopsis)
+========================================= */
+.synopsis {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.synopsis h2 {
+  font-size: 2.2rem;
+  color: var(--spidey-red);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.synopsis p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  word-break: keep-all;
+}
+
+/* =========================================
+   출연진 섹션 (Cast)
+========================================= */
+.cast-section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cast-section h2 {
+  font-size: 2.2rem;
+  color: var(--spidey-red);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.cast-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(226, 54, 54, 0.3);
+  border-color: rgba(226, 54, 54, 0.5);
+}
+
+.img-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #333;
+  transition: border-color 0.3s ease;
+}
+
+.cast-card:hover .img-wrapper {
+  border-color: var(--spidey-red);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cast-card h3 {
+  color: var(--text-light);
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.cast-card p {
+  color: var(--spidey-red);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* =========================================
+   예고편 영상 섹션 (Trailer)
+========================================= */
+.trailer-section {
+  padding: 80px 20px 150px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trailer-section h2 {
+  font-size: 2.2rem;
+  color: var(--spidey-red);
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid rgba(226, 54, 54, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================
+   푸터 (Footer)
+========================================= */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 1px solid #222;
+}
+
+footer p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* =========================================
+   본문 영역 모바일 반응형
+========================================= */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 12vw;
+  }
+}

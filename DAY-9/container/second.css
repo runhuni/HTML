@@ -1,0 +1,21 @@
+.second > .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*자식들을 행렬/바둑판/엑셀로 나타냄*/
+  display: grid;
+  grid-template-columns: repeat(10 1fr);
+  gap: 20px;
+}
+
+.second > .container > .box {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+@media (max-width: 768px) {
+  .second > .container {
+    grid-template-columns: 100px 100px 100px;
+  }
+}

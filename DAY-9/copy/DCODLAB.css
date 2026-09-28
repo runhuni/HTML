@@ -1,0 +1,21 @@
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  color: gray;
+  background-color: white;
+  min-width: 1500px;
+}

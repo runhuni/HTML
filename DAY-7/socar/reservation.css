@@ -1,0 +1,96 @@
+.reservation {
+  width: 100%;
+}
+
+.reservation > .contents {
+  width: 100%;
+  max-width: var(--width-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px 30px 20px;
+}
+
+.reservation > .contents > .title {
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.reservation > .contents > .search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.reservation > .contents > .search > .calendar {
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid #dde1e8;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  flex: 3.5;
+  background-color: #ffffff;
+}
+
+.reservation > .contents > .search > .calendar > .date-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.reservation > .contents > .search > .search-bar {
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid #dde1e8;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex: 5.5;
+  background-color: #ffffff;
+}
+
+.reservation > .contents > .search > .calendar > svg,
+.reservation > .contents > .search > .search-bar > svg {
+  color: var(--socar-blue);
+  stroke: var(--socar-blue);
+  flex-shrink: 0;
+}
+
+.reservation > .contents > .search > .search-bar > input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  color: var(--color-primary);
+}
+
+.reservation > .contents > .search > .search-bar > input::placeholder {
+  font-size: 15px;
+  color: #8b95a1;
+}
+
+.reservation > .contents > .search > button {
+  height: 52px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #8b95a1;
+  background-color: #f2f4f8;
+  border: none;
+  border-radius: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}

@@ -1,0 +1,6 @@
+.second {
+  background-color: #f7f7f5;
+}
+.second > .contents {
+  padding: 20px 0;
+}

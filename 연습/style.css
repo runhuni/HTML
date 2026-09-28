@@ -1,0 +1,81 @@
+/* 1. 리셋에 없는 박스 사이징 전역 보완 */
+* {
+  box-sizing: border-box;
+}
+
+/* 2. 화면 전체(vw, vh) 중앙 정렬 */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c3e50; /* 다크 네이비 배경 */
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center; /* 세로 중앙 */
+}
+
+/* 3. 카드 컨테이너 (세로 플렉스 구조) */
+.card {
+  width: 340px;
+  background-color: #ffffff;
+  padding: 36px 28px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column; /* 요소들을 위에서 아래로 세로 나열 */
+  align-items: center; /* 모든 자식 요소를 가로 중앙 정렬 */
+}
+
+/* 4. 타이틀 및 직무 */
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+.role {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-top: 6px;
+}
+
+/* 5. 가로 구분선 */
+.line {
+  width: 40px;
+  border: none;
+  border-top: 2px solid #3498db;
+  margin: 18px 0;
+}
+
+/* 6. 소개 문구 */
+.bio {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.bio span {
+  font-weight: bold;
+  color: #3498db;
+}
+
+/* 7. 스킬 태그 리스트 (가로 플렉스 구조) */
+.skills {
+  display: flex;
+  flex-direction: row; /* 태그들을 좌우로 가로 나열 */
+  gap: 8px; /* 태그 간 간격 */
+}
+
+.tag {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 4px;
+}

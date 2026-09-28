@@ -1,0 +1,74 @@
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.photo {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.album {
+  width: 100%;
+  height: 100%;
+}
+
+.album > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contents {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.photo:hover > .contents {
+  transform: translateY(0%);
+}
+
+.bg-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  opacity: 0.5;
+}
+
+.text-group {
+  padding: 10px;
+  color: white;
+  position: absolute;
+  z-index: 1;
+}
+
+.text-group > h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text-group {
+  padding: 20px;
+  color: white;
+}

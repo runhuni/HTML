@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f4f6f9;
+}
+
+.work-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #4a5db5;
+  letter-spacing: 1px; /*자간*/
+  line-height: 1.2; /*줄 높이*/
+  margin-bottom: 24px;
+}
+
+.work-list {
+  display: flex;
+  gap: 16px; /*액자 사이 간격*/
+}
+
+.work-card {
+  position: relative; /*기준점잡기*/
+  flex: 1; /*1씩 4등분*/
+  aspect-ratio: 1 / 1; /*가로 세로 비율 1:1고정*/
+  overflow: hidden; /*액자 밖으로 나오는 요소 숨기기*/
+  cursor: pointer;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*액자 빈틈없이 채우기*/
+  display: block; /*여백 없애기*/
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 84, 179, 0.88);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column; /*정렬 위에서 아래로*/
+  justify-content: flex-start; /*세로 맨 위로 붙이기*/
+  align-items: flex-start; /*가로 맨 왼쪽*/
+  gap: 8px;
+  opacity: 0; /*기본 상태에서 완전 투명*/
+  transition: opacity 0.3s ease;
+}
+
+.work-card:hover .work-overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.overlay-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.3;
+}

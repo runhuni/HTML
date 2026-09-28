@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+.appleButton {
+  font-family: "GMarketSans";
+  line-height: 1.5px;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 250px;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.googleButton {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 250px;
+  display: block;
+  cursor: pointer;
+}

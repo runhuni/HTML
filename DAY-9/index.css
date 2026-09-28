@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+@media (max-width: 1000px) {
+  /*박스들이 세로로 나열하기*/
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    background-color: blue;
+  }
+}

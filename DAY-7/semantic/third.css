@@ -1,0 +1,9 @@
+.third {
+  background-color: black;
+}
+
+.third > .contents > .title {
+  color: white;
+  font-size: 50px;
+  font-weight:;
+}

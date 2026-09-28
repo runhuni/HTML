@@ -1,0 +1,29 @@
+.card {
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  padding: 20px 40px 20px 40px;
+}
+
+img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #edeef0;
+}

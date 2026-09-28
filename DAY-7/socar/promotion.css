@@ -1,0 +1,125 @@
+.promotion {
+  width: 100%;
+}
+
+.promotion > .contents {
+  width: 100%;
+  max-width: var(--width-max);
+  margin: 0 auto;
+  padding: 20px 20px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.promotion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.promotion-header > .title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.promotion-header > .title-group > .title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.5px;
+}
+
+.promotion-header > .title-group > .desc {
+  font-size: 15px;
+  color: #6d7582;
+  letter-spacing: -0.3px;
+}
+
+.promotion-header > .nav-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e8ebf1;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.promotion-header > .nav-arrow:hover {
+  background-color: #f1f3f7;
+}
+
+/* 3열 그리드 레이아웃 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* 개별 카드 기본 상태 */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #eef1f6;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* 마우스를 올렸을 때 파란 테두리 */
+.card:hover {
+  border-color: var(--socar-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 120, 255, 0.08);
+}
+
+/* 캡처처럼 첫 번째 카드를 상시 선택 상태로 둘 때 (.active 클래스) */
+.card.active {
+  border-color: var(--socar-blue);
+}
+/* 썸네일 영역: 가로세로 16:9 비율 유지 */
+.thumb-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #f2f3f8;
+  overflow: hidden;
+}
+
+.thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 카드 텍스트 정보 */
+.card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.3px;
+}
+
+.card-desc {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #6d7582;
+  letter-spacing: -0.2px;
+}

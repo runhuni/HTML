@@ -1,0 +1,29 @@
+.button {
+  color: white;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 35px 12px 35px;
+}
+
+.blue1 {
+  background-color: #2563eb;
+}
+
+.blue2 {
+  background-color: #1d4ed8;
+}
+
+.green {
+  background-color: #14b8a6;
+}
+
+.green2 {
+  background-color: #0d9488;
+}
+
+.white {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}

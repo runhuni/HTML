@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.palette {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+.c1 {
+  background-color: #55efc4;
+}
+.c2 {
+  background-color: #81ecec;
+}
+.c3 {
+  background-color: #00b894;
+}
+.c4 {
+  background-color: #00cec9;
+}
+
+.text {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
